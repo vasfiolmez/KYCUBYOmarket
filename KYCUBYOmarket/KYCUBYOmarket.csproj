@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA7FC390-1F29-48E5-BA60-0257BF4E45C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KYCUBYOmarket</RootNamespace>
+    <AssemblyName>KYCUBYOmarket</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bilanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilanco.Designer.cs">
+      <DependentUpon>Bilanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminPanel.Designer.cs">
+      <DependentUpon>frmAdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAyarlar.Designer.cs">
+      <DependentUpon>frmAyarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSifreGuncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSifreGuncelleme.Designer.cs">
+      <DependentUpon>frmSifreGuncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKasa.Designer.cs">
+      <DependentUpon>frmKasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGırıs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGırıs.Designer.cs">
+      <DependentUpon>frmGırıs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplashEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashEkranı.Designer.cs">
+      <DependentUpon>frmSplashEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStokGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStokGiris.Designer.cs">
+      <DependentUpon>frmStokGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStokGuncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStokGuncelleme.Designer.cs">
+      <DependentUpon>frmStokGuncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSıfreOnayKodu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSıfreOnayKodu.Designer.cs">
+      <DependentUpon>frmSıfreOnayKodu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmguncelle.Designer.cs">
+      <DependentUpon>frmguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYArdım.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYArdım.Designer.cs">
+      <DependentUpon>frmYArdım.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYetkiAta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYetkiAta.Designer.cs">
+      <DependentUpon>frmYetkiAta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmİstekListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmİstekListesi.Designer.cs">
+      <DependentUpon>frmİstekListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="VeriTabanı.cs" />
+    <EmbeddedResource Include="Bilanco.resx">
+      <DependentUpon>Bilanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminPanel.resx">
+      <DependentUpon>frmAdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAyarlar.resx">
+      <DependentUpon>frmAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSifreGuncelleme.resx">
+      <DependentUpon>frmSifreGuncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKasa.resx">
+      <DependentUpon>frmKasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGırıs.resx">
+      <DependentUpon>frmGırıs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplashEkranı.resx">
+      <DependentUpon>frmSplashEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStokGiris.resx">
+      <DependentUpon>frmStokGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStokGuncelleme.resx">
+      <DependentUpon>frmStokGuncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSıfreOnayKodu.resx">
+      <DependentUpon>frmSıfreOnayKodu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmguncelle.resx">
+      <DependentUpon>frmguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYArdım.resx">
+      <DependentUpon>frmYArdım.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYetkiAta.resx">
+      <DependentUpon>frmYetkiAta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmİstekListesi.resx">
+      <DependentUpon>frmİstekListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resimler\021297-ultra-glossy-silver-button-icon-symbols-shapes-minimize.png" />
+    <Content Include="resimler\02_team.png" />
+    <Content Include="resimler\10.png" />
+    <Content Include="resimler\100tl.png" />
+    <Content Include="resimler\20.png" />
+    <Content Include="resimler\200.png" />
+    <Content Include="resimler\5.png" />
+    <Content Include="resimler\50.png" />
+    <Content Include="resimler\55.jpg" />
+    <Content Include="resimler\avatar6.png" />
+    <Content Include="resimler\B9dph8s.jpg" />
+    <Content Include="resimler\barcode-icon.gif" />
+    <Content Include="resimler\Barcode-icon.png" />
+    <Content Include="resimler\Button-Back-1-512.png" />
+    <Content Include="resimler\check_list-512.png" />
+    <Content Include="resimler\D%2883%29.png" />
+    <Content Include="resimler\document-export.png" />
+    <Content Include="resimler\guncelleme.png" />
+    <Content Include="resimler\Hopstarter-Sleek-Xp-Basic-Help %281%29.png" />
+    <Content Include="resimler\karsilastirma.png" />
+    <Content Include="resimler\Kasa_Liste32x32.png" />
+    <Content Include="resimler\Kaydet24x24.png" />
+    <Content Include="resimler\logo1.png" />
+    <Content Include="resimler\Open-folder-delete-icon.png" />
+    <Content Include="resimler\Program_Exit32x32.png" />
+    <Content Include="resimler\Sil32x32.png" />
+    <Content Include="resimler\simple-backgrouhnd-1024x576.jpg" />
+    <Content Include="resimler\simple-background-1024x576.jpg" />
+    <Content Include="resimler\siparis-icon.png" />
+    <Content Include="resimler\Siparis_Iptal32x32.png" />
+    <Content Include="resimler\Siparis_Onaylanan32x32.png" />
+    <Content Include="resimler\system-run-3.png" />
+    <Content Include="resimler\tag_white_barcode.png" />
+    <Content Include="resimler\update_icon_large.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
