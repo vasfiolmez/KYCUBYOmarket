@@ -1,6 +1,8 @@
 # KYCUBYOmarket
 ----Stok takip uygulaması----
 
+projenin videolu sunumu:https://youtu.be/uW_HF2bvlMw
+
 1-LOGİN EKRANI
 
 ![frmgiris](https://user-images.githubusercontent.com/58458944/210185704-2f63ca64-f450-49ca-a84d-8293d7c8ff9e.png)
